@@ -3,11 +3,13 @@
 //const container = document.getElementById('root')
 //container.appendChild(element)
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import 'bootstrap/dist/css/bootstrap.css'
-import Card from './components/Card'
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import Card from "./components/Card";
+import exerciseImg from "./images/exercise.png";
 
+/*
 const user = {
 	firtName: 'Luis',
 	lastName: 'Ramos',
@@ -31,7 +33,17 @@ const element = (
 		<img src={user.avatar} alt='img'/>
 	</div>
 )
+*/
 
-const container = document.getElementById('root')
+const container = document.getElementById("root");
 
-ReactDOM.render(<Card/>, container)
+ReactDOM.render(
+  <Card
+    title="Tecnnique Guides"
+    description="Learn amazing street workout and calisthenics"
+    img={exerciseImg}
+    leftColor="#A74CF2"
+    rightColor="#617BFB"
+  />,
+  container
+);

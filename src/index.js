@@ -5,6 +5,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'bootstrap/dist/css/bootstrap.css'
+import Card from './components/Card'
 
 const user = {
 	firtName: 'Luis',
@@ -26,9 +28,10 @@ function getGreeting(user){
 const element = (
 	<div>
 		<h1>{getGreeting(user)}</h1>
-		<img src={user.avatar}/>
+		<img src={user.avatar} alt='img'/>
 	</div>
 )
+
 const container = document.getElementById('root')
 
-ReactDOM.render(element, container)
+ReactDOM.render(<Card/>, container)
